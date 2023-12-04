@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { selectArtworkOne, selectArtworkTwo, selectBackSplashImage, selectInitialText, selectInitImage1, selectInitImage2, selectInitImage3, selectInitImage4, selectSecondaryContentText, selectSecondaryContentTitle, selectSiteName, selectSubTitle, selectTextCardOne, selectTextCardTwo, setNavTop } from '../../App/AppFeature';
+import { selectArtworkOne, selectArtworkTwo, selectBackSplashImage, selectInitialText, selectInitImage1, selectInitImage2, selectInitImage3, selectInitImage4, selectSecondaryContentText, selectSecondaryContentTitle, selectSiteName, selectSubTitle, selectTextCardOne, setNavTop } from '../../App/AppFeature';
 import { InitialContent } from './InitialContent/InitialContent';
 
 import "./LandingPage.css";
@@ -24,8 +24,6 @@ export const LandingPage = () => {
 
     const cardOne = useSelector(selectTextCardOne);
 
-    const cardTwo = useSelector(selectTextCardTwo);
-
     const image1 = useSelector(selectInitImage1);
 
     const image2 = useSelector(selectInitImage2);
@@ -43,6 +41,7 @@ export const LandingPage = () => {
     React.useEffect(() => {
         dispatch(setNavTop(false))
         window.scrollTo(0, 0)
+        // eslint-disable-next-line
     }, [])
 
     return (

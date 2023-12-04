@@ -39,6 +39,7 @@ export const Navigation = ({ links, elID, icon}) => {
                 dispatch(setNavTop(true))
             }        
         }
+        // eslint-disable-next-line
     }, [])
 
     const goHome = () => {
@@ -67,7 +68,7 @@ export const Navigation = ({ links, elID, icon}) => {
         <>
             <nav className={top ? "top" : ""}>
                 <div onClick={goHome} className="nav-icon-container">
-                    <img src={icon} />
+                    <img src={icon} alt="" />
                 </div>
                 <div className="links-container">
                     {links.map(link => {

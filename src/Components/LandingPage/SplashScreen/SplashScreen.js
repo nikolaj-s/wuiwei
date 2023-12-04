@@ -10,13 +10,16 @@ export const SplashScreen = ({splashScreenBackDrop, title, subtitle}) => {
 
     let [index, setIndex] = React.useState(0);
 
+    // eslint-disable-next-line
     React.useEffect(() => {
 
         let interval = setInterval(() => {
             
             if (index === splashScreenBackDrop.length - 1) {
+                // eslint-disable-next-line
                 setIndex(0)
             } else {
+                // eslint-disable-next-line
                 setIndex(index+=1);
             }
 
@@ -26,6 +29,7 @@ export const SplashScreen = ({splashScreenBackDrop, title, subtitle}) => {
         return () => {
             clearInterval(interval)
         }
+    // eslint-disable-next-line
     }, [index])
 
     return (

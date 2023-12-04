@@ -1,8 +1,6 @@
 
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import { ImageComponent } from '../../ImageComponent/ImageComponent';
 
 import "./InitialContent.css";

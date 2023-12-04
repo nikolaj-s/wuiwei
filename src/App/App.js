@@ -3,7 +3,7 @@ import React from 'react'
 
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { LandingPage } from '../Components/LandingPage/LandingPage';
 import { Footer } from '../Components/Footer/Footer';
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,6 +28,7 @@ function App() {
 
     dispatch(fetchReviews())
   
+  // eslint-disable-next-line
   }, [])
 
 
@@ -45,7 +46,7 @@ function App() {
 
         <Footer 
         icon={
-          <img src="https://res.cloudinary.com/drlkgoter/image/upload/v1638554645/Nor.%20X%20west/Rectangle_25_xtvz2p.png" />
+          <img alt='nor x west' src="https://res.cloudinary.com/drlkgoter/image/upload/v1638554645/Nor.%20X%20west/Rectangle_25_xtvz2p.png" />
         }
         siteName={siteName}
         

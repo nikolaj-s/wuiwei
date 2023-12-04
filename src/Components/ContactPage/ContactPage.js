@@ -1,8 +1,7 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { selectArtworkThree, selectPhoneNumber, selectTextCardThree, setNavTop } from '../../App/AppFeature';
-import { ImageComponent } from '../ImageComponent/ImageComponent';
-import { TextBoxComponent } from '../TextBoxComponent/TextBoxComponent';
+import { useDispatch } from 'react-redux';
+import {  setNavTop } from '../../App/AppFeature';
+
 import { ContactInfo } from './ContactInfo/ContactInfo';
 
 import "./ContactPage.css";
@@ -12,20 +11,12 @@ export const ContactPage = () => {
 
     const dispatch = useDispatch();
 
-    const phoneNumber = useSelector(selectPhoneNumber);
-
-    const artwork = useSelector(selectArtworkThree);
-
-    const card = useSelector(selectTextCardThree)
-
     React.useEffect(() => {
         dispatch(setNavTop(true));
         window.scrollTo(0, 0)
+        // eslint-disable-next-line
     }, [])
-
-    const openSocialMedia = () => {
-        window.open("https://youtube.com/channel/UCrprisLUlwxiJGlrVjUnGTg", '_blank');
-    }
+    
     return (
         <div className="contact-page">
             <div className="sub-page-title-wrapper">

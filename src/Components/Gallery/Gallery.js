@@ -14,6 +14,7 @@ export const Gallery = () => {
     React.useEffect(() => {
         dispatch(setNavTop(true))
         window.scrollTo(0, 0)
+    // eslint-disable-next-line
     }, [])
 
     const handleSelectedImage = (image) => {
@@ -37,7 +38,7 @@ export const Gallery = () => {
                     {galleryPhotos.map((photo, i) => {
                         return (
                             <div onClick={() => {handleSelectedImage(photo)}} key={i} className="gallery-photo-container">
-                                <img src={photo} alt="gallery" />
+                                <img src={photo} alt="" />
                             </div>
                         )
                     })}
@@ -46,7 +47,7 @@ export const Gallery = () => {
             </div>
             {selectedImage ? 
             <div onClick={closeExpandedImage} className='expanded-image-container'>
-                <img src={selectedImage} />
+                <img src={selectedImage} alt="" />
             </div>
             : null}            
         </div>
