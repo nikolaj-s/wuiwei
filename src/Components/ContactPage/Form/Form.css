@@ -1,0 +1,107 @@
+
+
+form {
+    width: 100%;
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1rem;
+}
+
+form input {
+    width: calc(100% - 10px);
+    height: 60px;
+    font-size: 2rem;
+    background-color: white;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+    border-radius: 0px;
+    border: none;
+    padding: 5px;
+}
+
+form textarea {
+    font-size: 2rem;
+    background-color: white;
+    width: calc(100% - 10px);
+    height: 280px;
+    padding: 5px;
+    resize: none;
+    border-radius: 0px;
+    margin: 2rem 0;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+form button {
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: rgba(189, 189, 189, 0.432);
+}
+
+.sent-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color-var);
+    transition: 1s;
+}
+
+.sent-alert p {
+    text-align: center;
+}
+
+@media only screen and (max-height: 701px) {
+    .contact-page-wrapper .text-container .inner-text-container .sub-image-container {
+        display: none;
+    }
+    .contact-page-wrapper .text-container .inner-text-container {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    form input {
+        height: 50px;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+        flex-shrink: 0;
+
+    }
+
+    form textarea {
+        height: 200px;
+        font-size: 1.4rem;
+        flex-shrink: 0;
+    }
+
+    form button {
+        margin: 2rem 0;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+}

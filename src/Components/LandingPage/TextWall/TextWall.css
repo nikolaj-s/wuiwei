@@ -1,0 +1,30 @@
+
+.text-wall {
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    background-color: white;
+}
+
+.text-wall h1 {
+    margin: 0 20px;
+    font-size: 3rem;
+}
+
+.text-wall p {
+    margin-left: 20px;
+    font-size: 1.8rem;
+}
+
+.text-wall h3 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.text-wall h3:hover {
+    opacity: 0.8;
+}
+

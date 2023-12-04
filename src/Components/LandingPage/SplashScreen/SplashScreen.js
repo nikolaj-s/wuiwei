@@ -1,0 +1,45 @@
+
+
+import React from 'react'
+
+import { motion, AnimatePresence } from 'framer-motion';
+
+import "./SplashScreen.css";
+
+export const SplashScreen = ({splashScreenBackDrop, title, subtitle}) => {
+
+    let [index, setIndex] = React.useState(0);
+
+    React.useEffect(() => {
+
+        let interval = setInterval(() => {
+            
+            if (index === splashScreenBackDrop.length - 1) {
+                setIndex(0)
+            } else {
+                setIndex(index+=1);
+            }
+
+        }, 5000)
+
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, [index])
+
+    return (
+        <div className="splash-screen-container">
+            <AnimatePresence >
+                <motion.img transition={{duration: 1}} initial={{translateX: '-100%'}} animate={{translateX: '0%'}} exit={{translateX: '100%'}} src={splashScreenBackDrop[index]} key={index} />
+            </AnimatePresence>
+            
+            <div className="title-container">
+                <h1>{title}</h1>
+                <h3>{subtitle}</h3>
+            </div>
+        </div>
+    )
+}
+
+

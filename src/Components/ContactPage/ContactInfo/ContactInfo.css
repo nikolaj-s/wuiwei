@@ -1,0 +1,22 @@
+
+.contact-info-container {
+    width: 48%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info-container h2,
+.contact-info-container a {
+    text-align: center;
+}
+
+@media only screen and (orientation: portrait) {
+
+    .contact-info-container {
+        width: 90%;
+    }
+}

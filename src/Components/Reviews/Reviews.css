@@ -1,0 +1,70 @@
+.reviews-outer-container {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.subtitle-reviews-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.subtitle-reviews-title h2 {
+    margin-left: 1rem;
+}
+
+.post-review-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.post-review-container:hover {
+    opacity: 0.5;
+}
+
+.post-review-container svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-inner-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+}
+.post-a-review-button {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.58);
+    background-color: rgb(230, 157, 22);
+    cursor: pointer;
+}
+
+.post-a-review-button:hover {
+    opacity: 0.6;
+}
+
+.post-a-review-button h3 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}

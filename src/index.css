@@ -1,0 +1,15 @@
+:root {
+  --secondary-color-var: #F9F9F9;
+  --border-color-var: rgba(26, 26, 26, 0.849);
+  --navigation-color-var: white;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

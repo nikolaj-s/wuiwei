@@ -1,0 +1,17 @@
+.reviews-preview-container {
+    width: 100%;
+    max-width: 1600px;
+    background-color: white;
+}
+
+.reviews-preview-container h1 {
+    margin-left: 20px;
+    font-size: 3rem;
+}
+
+.reviews-preview-inner-wrapper {
+    display: flex;
+    height: 700px;
+    overflow-x: auto;
+    width: 100%;
+}

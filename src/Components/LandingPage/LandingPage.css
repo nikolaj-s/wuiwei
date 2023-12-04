@@ -1,0 +1,43 @@
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: 0.1s;
+    animation: fade-in 0.1s linear forwards;
+}
+
+.content-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: white;
+
+}
+
+/* mobile style */
+@media only screen and (orientation: portrait) {
+    .content-wrapper {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        margin: 0;
+    }
+}
+    
+

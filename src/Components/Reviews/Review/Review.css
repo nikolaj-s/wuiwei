@@ -1,0 +1,36 @@
+.review-tab-container {
+    width: calc(100% - 1rem);
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary-color-var);
+    padding: 0.5rem;
+}
+
+.review-tab-container p {
+    font-size: 1.3rem;
+    line-height: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-rating-wrapper svg{
+    width: 25px;
+    height: 25px;
+}
+
+@media only screen and (orientation: portrait) {
+    .review-tab-container {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+    }
+}
