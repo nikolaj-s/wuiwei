@@ -97,6 +97,8 @@ const AppSlice = createSlice({
 
         // gallery
         galleryPhotos: [
+            "https://res.cloudinary.com/drlkgoter/image/upload/v1712433588/434634662_783956686619599_3611582993589378922_n_auw3z2.jpg",
+            "https://res.cloudinary.com/drlkgoter/image/upload/v1712433588/434702971_725842263079409_7268168614811368727_n_dfrsr9.jpg",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1697920336/393860309_865679778244743_5149254299755418594_n_pkgbal.jpg",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1697920336/368121387_2471814819695237_1433894210293742810_n_joydsx.jpg",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1684433305/343245618_767728411573525_7840506480341930482_n_rawa9z.jpg",
@@ -176,7 +178,7 @@ const AppSlice = createSlice({
             state.loadingReviews = false;
             state.reviewErrorMessage = "";
             state.reviewErrorState = false;
-            state.reviews = action.payload.reviews;
+            state.reviews = action.payload.reviews.reverse();
         },
 
         [postReview.pending]: (state, action) => {

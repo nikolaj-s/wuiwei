@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { selectMobileNavigationState, selectNavTop, setNavTop, toggleMobileNavigation } from '../../App/AppFeature'
+import { selectMobileNavigationState, setNavTop, toggleMobileNavigation } from '../../App/AppFeature'
 
 import { useAnimation, motion } from 'framer-motion'
 
@@ -9,9 +9,9 @@ import "./Navigation.css"
 
 export const Navigation = ({ links, elID, icon}) => {
 
-    const top = useSelector(selectNavTop);
-
     const dispatch = useDispatch();
+
+    const [page,setPage] = React.useState('');
 
     const mobileMenuOpen = useSelector(selectMobileNavigationState);
 
@@ -64,16 +64,26 @@ export const Navigation = ({ links, elID, icon}) => {
         })
     }
 
+    React.useEffect(() => {
+
+        const location = window.location.pathname.split('/')[1];
+
+        if (location) {
+            setPage(location);
+        }
+    }, [])
+
     return (
         <>
-            <nav className={top ? "top" : ""}>
+            <nav>
                 <div onClick={goHome} className="nav-icon-container">
                     <img src={icon} alt="" />
+                    <h2>{page}</h2>
                 </div>
                 <div className="links-container">
                     {links.map(link => {
                         return (
-                            <Link  className="nav-link" to={link === "Home" ? "/" : `/${link.toLowerCase()}`}>{link}</Link>
+                            <Link onClick={() => {setPage(link)}} className="nav-link" to={link === "Home" ? "/" : `/${link.toLowerCase()}`}>{link}</Link>
                         )
                     })}
                 </div>
@@ -89,7 +99,7 @@ export const Navigation = ({ links, elID, icon}) => {
                 <div className="mobile-links-container">
                     {links.map(link => {
                         return (
-                            <Link onClick={closeMobileMenu} className="nav-link" to={link === "Home" ? "/" : `/${link.toLowerCase()}`}>{link}</Link>
+                            <Link onClick={() => {closeMobileMenu(); setPage(link); }} className="nav-link" to={link === "Home" ? "/" : `/${link.toLowerCase()}`}>{link}</Link>
                         )
                     })}
 

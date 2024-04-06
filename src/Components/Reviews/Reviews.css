@@ -42,25 +42,28 @@
 }
 
 .reviews-inner-wrapper {
-    width: 100%;
+    width: calc(100% - 20px);
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1600px;
+    margin-top: 20px;
 }
 .post-a-review-button {
     position: fixed;
     bottom: 40px;
-    right: 10px;
+    right: 15px;
     padding: 15px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.58);
     background-color: rgb(230, 157, 22);
     cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
 }
 
 .post-a-review-button:hover {
-    opacity: 0.6;
+   scale: 1.2;
 }
 
 .post-a-review-button h3 {

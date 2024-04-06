@@ -18,27 +18,28 @@
 }
 
 .gallery-inner-container {
+    margin-top: 20px;
     max-width: 1600px;
     display: flex;
     height: auto;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100% - 20px);
     justify-content: center;
     align-items: center;
 }
 
 .gallery-photo-container {
-    background-color: rgb(255, 255, 255);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .gallery-photo-container:hover {
     filter: brightness(105%);
-    background-color: var(--secondary-color-var);
 }
 
 .gallery-photo-container img {

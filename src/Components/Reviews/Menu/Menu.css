@@ -7,18 +7,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color-var);
     z-index: 999;
+    background-color: rgba(255, 255, 255, 0.478);
 }
 .menu-inner-container {
-    width: 1200px;
-    height: 90%;
+    width: 500px;
+    height: 700px;
     background-color: white;
     flex-direction: column;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 1rem;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.414);
 }
 
 .title-menu-wrapper {
@@ -38,11 +40,11 @@
 }
 
 .title-menu-wrapper h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .rating-wrapper {
-    border-left: solid 10px var(--secondary-color-var);
+    border-left: solid 10px black;
     padding: 5px;
 }
 

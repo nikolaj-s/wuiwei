@@ -4,6 +4,7 @@ import { selectGallery, setNavTop } from '../../App/AppFeature'
 
 import "./Gallery.css"
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import { ImageComponent } from './ImageComponent/ImageComponent'
 
 export const Gallery = () => {
 
@@ -29,16 +30,13 @@ export const Gallery = () => {
 
     return (
         <div className="gallery-outer-container">
-            <div className="page-subtitle-container">
-                <h2>Gallery</h2>
-            </div>
             <div className="gallery-inner-container">
                 <ResponsiveMasonry style={{width: '100%'}}>
                     <Masonry gutter='5px'>
                     {galleryPhotos.map((photo, i) => {
                         return (
                             <div onClick={() => {handleSelectedImage(photo)}} key={i} className="gallery-photo-container">
-                                <img src={photo} alt="" />
+                                <ImageComponent image={photo} />
                             </div>
                         )
                     })}

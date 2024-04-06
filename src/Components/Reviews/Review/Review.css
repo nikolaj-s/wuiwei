@@ -8,6 +8,7 @@
     justify-content: space-between;
     background-color: var(--secondary-color-var);
     padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .review-tab-container p {

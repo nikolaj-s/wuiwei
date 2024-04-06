@@ -53,8 +53,8 @@ export const Menu = (props) => {
     const loading = useSelector(selectPostingReviewLoadingState);
 
     return (
-        <motion.div initial={{opacity: 0, scale: 0, top: 0, right: 0}} animate={[animate, {opacity: 1, scale: 1}]}  className="menu-outer-container">
-            <div className="menu-inner-container">
+        <motion.div onClick={() => {closeMenu()}} initial={{opacity: 0, scale: 0, top: 0, right: 0}} animate={[animate, {opacity: 1, scale: 1}]}  className="menu-outer-container">
+            <div onClick={(e) => {e.stopPropagation()}} className="menu-inner-container">
                 <div className="title-menu-wrapper">
                     <h2>Post a Review</h2>
                     <svg onClick={closeMenu} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -21,6 +21,7 @@ form input {
     border-radius: 0px;
     border: none;
     padding: 5px;
+    border-radius: 10px;
 }
 
 form textarea {
@@ -31,6 +32,7 @@ form textarea {
     padding: 5px;
     resize: none;
     border-radius: 0px;
+    border-radius: 10px;
     margin: 2rem 0;
     border: none;
     font-family: 'Comfortaa', sans-serif;
@@ -42,6 +44,7 @@ form button {
     justify-content: flex-start;
     align-items: center;
     min-width: 100%;
+    border-radius: 10px;
     background-color: white;
     border: none;
     cursor: pointer;

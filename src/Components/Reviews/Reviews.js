@@ -36,10 +36,7 @@ export const Reviews = () => {
 
     return (
         <div className="reviews-outer-container">
-            <div className="subtitle-reviews-title">
-                <h2>Reviews</h2>
-                
-            </div>
+           
             <div className="reviews-inner-wrapper">
 
                 {loading ? 

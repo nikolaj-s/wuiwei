@@ -39,8 +39,10 @@ export const SplashScreen = ({splashScreenBackDrop, title, subtitle}) => {
             </AnimatePresence>
             
             <div className="title-container">
-                <h1>{title}</h1>
-                <h3>{subtitle}</h3>
+                <div className='inner-title-container'>
+                    <h1>{title}</h1>
+                    <h3>{subtitle}</h3>
+                </div>
             </div>
         </div>
     )
