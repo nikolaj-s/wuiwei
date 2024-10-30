@@ -6,7 +6,7 @@ export const Review = ({ review, maxWidth, margin }) => {
     return (
         <div style={{maxWidth: maxWidth, margin: margin}} className="review-tab-container">
             <h3>{review.name}</h3>
-            <p>{review.review}</p>
+            <p className='review-content'>{review.review}</p>
             <div className="review-rating-container">
                 <p>{review.date.split('T')[0]}</p>
                 <div className='review-rating-wrapper'>

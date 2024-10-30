@@ -12,40 +12,40 @@ form {
 }
 
 form input {
-    width: calc(100% - 10px);
-    height: 60px;
-    font-size: 2rem;
+    width: calc(100% - 20px);
+    font-size: 1.5rem;
     background-color: white;
-    margin: 1rem 0;
+    margin: 10px 0;
     padding-left: 0.5rem;
     border-radius: 0px;
     border: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 form textarea {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: white;
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     height: 280px;
-    padding: 5px;
+    padding: 10px;
     resize: none;
     border-radius: 0px;
     border-radius: 10px;
-    margin: 2rem 0;
+    margin: 10px 0;
     border: none;
     font-family: 'Comfortaa', sans-serif;
 }
 
 form button {
-    height: 90px;
+    height: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     min-width: 100%;
     border-radius: 10px;
     background-color: white;
+    padding: 10px;
     border: none;
     cursor: pointer;
     font-family: 'Comfortaa', sans-serif;

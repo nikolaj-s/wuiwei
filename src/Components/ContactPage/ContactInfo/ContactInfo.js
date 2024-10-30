@@ -13,6 +13,7 @@ export const ContactInfo = () => {
         <div className='contact-info-container'>
             <h2>Contact Me At The Following:</h2>
             <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+            <h2>or via the contact form</h2>
         </div>
     )
 }

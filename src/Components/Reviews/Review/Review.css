@@ -5,17 +5,23 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--secondary-color-var);
     padding: 0.5rem;
     border-radius: 10px;
 }
 
-.review-tab-container p {
+.review-tab-container h3 {
+    margin: 10px 0px 0px 0px;
+    font-size: 1.8rem;
+}
+
+.review-tab-container .review-content {
     font-size: 1.3rem;
-    line-height: 2;
+    line-height: 1.4;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 100%;
 }
 
 .review-rating-container {

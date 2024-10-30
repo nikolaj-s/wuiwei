@@ -97,6 +97,7 @@ const AppSlice = createSlice({
 
         // gallery
         galleryPhotos: [
+            "https://res.cloudinary.com/drlkgoter/image/upload/s--gwVv2LKk--/f_auto,q_auto/k935t4wzmkwd0z0gqnyk",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1712433588/434634662_783956686619599_3611582993589378922_n_auw3z2.jpg",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1712433588/434702971_725842263079409_7268168614811368727_n_dfrsr9.jpg",
             "https://res.cloudinary.com/drlkgoter/image/upload/v1697920336/393860309_865679778244743_5149254299755418594_n_pkgbal.jpg",
